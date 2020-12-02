@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="loader-container" id="js-loader">
+      <div class="circle">
+        <div class="loader l1">
+          <div class="loader l2">
+            <div class="loader l3">
+              <div class="loader l4"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div id="inTurnBlurringTextG">
+          <div id="inTurnBlurringTextG_1" class="inTurnBlurringTextG">L</div>
+          <div id="inTurnBlurringTextG_2" class="inTurnBlurringTextG">o</div>
+          <div id="inTurnBlurringTextG_3" class="inTurnBlurringTextG">a</div>
+          <div id="inTurnBlurringTextG_4" class="inTurnBlurringTextG">d</div>
+          <div id="inTurnBlurringTextG_5" class="inTurnBlurringTextG">i</div>
+          <div id="inTurnBlurringTextG_6" class="inTurnBlurringTextG">n</div>
+          <div id="inTurnBlurringTextG_7" class="inTurnBlurringTextG">g</div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <style>
+    .loader-container {
+      position: fixed;
+      z-index: 50;
+      width: 100vw;
+      height: 100vh;
+      top: 0;
+      left: 0;
+      background: #f1f1f1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .circle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 45vmin;
+      height: 45vmin;
+    }
+
+    .loader {
+      width: calc(100% - 0px);
+      height: calc(100% - 0px);
+      border: 8px solid #f1f1f1;
+      border-radius: 50%;
+      animation: rotate 5s linear infinite;
+    }
+
+    .l1 {
+      border-top: 8px solid #d8973c;
+    }
+
+    .l2 {
+      border-top: 8px solid #a4243b;
+    }
+
+    .l3 {
+      border-top: 8px solid #d8c99b;
+    }
+
+    .l4 {
+      border-top: 8px solid #bd632f;
+    }
+
+    .letters-container {
+      display: flex;
+      position: absolute;
+    }
+
+    #inTurnBlurringTextG {
+      width: 100%;
+      margin: auto;
+    }
+
+    .inTurnBlurringTextG {
+      color: transparent;
+      font-family: "Caveat", serif;
+      font-size: 10vmin;
+      text-decoration: none;
+      font-weight: normal;
+      font-style: normal;
+      float: left;
+      animation-name: bounce_inTurnBlurringTextG;
+      -o-animation-name: bounce_inTurnBlurringTextG;
+      -ms-animation-name: bounce_inTurnBlurringTextG;
+      -webkit-animation-name: bounce_inTurnBlurringTextG;
+      -moz-animation-name: bounce_inTurnBlurringTextG;
+      animation-duration: 2.09s;
+      -o-animation-duration: 2.09s;
+      -ms-animation-duration: 2.09s;
+      -webkit-animation-duration: 2.09s;
+      -moz-animation-duration: 2.09s;
+      animation-iteration-count: infinite;
+      -o-animation-iteration-count: infinite;
+      -ms-animation-iteration-count: infinite;
+      -webkit-animation-iteration-count: infinite;
+      -moz-animation-iteration-count: infinite;
+      animation-direction: normal;
+      -o-animation-direction: normal;
+      -ms-animation-direction: normal;
+      -webkit-animation-direction: normal;
+      -moz-animation-direction: normal;
+    }
+
+    #inTurnBlurringTextG_1 {
+      animation-delay: 0.75s;
+      -o-animation-delay: 0.75s;
+      -ms-animation-delay: 0.75s;
+      -webkit-animation-delay: 0.75s;
+      -moz-animation-delay: 0.75s;
+    }
+    #inTurnBlurringTextG_2 {
+      animation-delay: 0.9s;
+      -o-animation-delay: 0.9s;
+      -ms-animation-delay: 0.9s;
+      -webkit-animation-delay: 0.9s;
+      -moz-animation-delay: 0.9s;
+    }
+    #inTurnBlurringTextG_3 {
+      animation-delay: 1.05s;
+      -o-animation-delay: 1.05s;
+      -ms-animation-delay: 1.05s;
+      -webkit-animation-delay: 1.05s;
+      -moz-animation-delay: 1.05s;
+    }
+    #inTurnBlurringTextG_4 {
+      animation-delay: 1.2s;
+      -o-animation-delay: 1.2s;
+      -ms-animation-delay: 1.2s;
+      -webkit-animation-delay: 1.2s;
+      -moz-animation-delay: 1.2s;
+    }
+    #inTurnBlurringTextG_5 {
+      animation-delay: 1.35s;
+      -o-animation-delay: 1.35s;
+      -ms-animation-delay: 1.35s;
+      -webkit-animation-delay: 1.35s;
+      -moz-animation-delay: 1.35s;
+    }
+    #inTurnBlurringTextG_6 {
+      animation-delay: 1.5s;
+      -o-animation-delay: 1.5s;
+      -ms-animation-delay: 1.5s;
+      -webkit-animation-delay: 1.5s;
+      -moz-animation-delay: 1.5s;
+    }
+    #inTurnBlurringTextG_7 {
+      animation-delay: 1.64s;
+      -o-animation-delay: 1.64s;
+      -ms-animation-delay: 1.64s;
+      -webkit-animation-delay: 1.64s;
+      -moz-animation-delay: 1.64s;
+    }
+    #inTurnBlurringTextG_8 {
+      animation-delay: 1.79s;
+      -o-animation-delay: 1.79s;
+      -ms-animation-delay: 1.79s;
+      -webkit-animation-delay: 1.79s;
+      -moz-animation-delay: 1.79s;
+    }
+
+    @keyframes rotate {
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes bounce_inTurnBlurringTextG {
+      0% {
+        text-shadow: rgb(196, 28, 50) 0 0 0;
+      }
+
+      100% {
+        text-shadow: rgb(34, 161, 155) 0 0 88px;
+      }
+    }
+
+    @-o-keyframes bounce_inTurnBlurringTextG {
+      0% {
+        text-shadow: rgb(196, 28, 50) 0 0 0;
+      }
+
+      100% {
+        text-shadow: rgb(34, 161, 155) 0 0 88px;
+      }
+    }
+
+    @-ms-keyframes bounce_inTurnBlurringTextG {
+      0% {
+        text-shadow: rgb(196, 28, 50) 0 0 0;
+      }
+
+      100% {
+        text-shadow: rgb(34, 161, 155) 0 0 88px;
+      }
+    }
+
+    @-webkit-keyframes bounce_inTurnBlurringTextG {
+      0% {
+        text-shadow: rgb(196, 28, 50) 0 0 0;
+      }
+
+      100% {
+        text-shadow: rgb(34, 161, 155) 0 0 88px;
+      }
+    }
+
+    @-moz-keyframes bounce_inTurnBlurringTextG {
+      0% {
+        text-shadow: rgb(196, 28, 50) 0 0 0;
+      }
+
+      100% {
+        text-shadow: rgb(34, 161, 155) 0 0 88px;
+      }
+    }
+  </style>
+</html>
